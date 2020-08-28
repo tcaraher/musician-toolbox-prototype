@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import AudioVisualiser from "./AudioVisualiser";
+import ml5 from 'ml5';
 
 //When the component mounts we're going to setup the Web Audio API objects.
 // First we create a new AudioContext (Safari still only supports the webkit prefixed version of this, sadly).

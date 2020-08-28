@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+
+
 class AudioVisualiser extends Component {
     // need to get a reference to the <canvas> element so that we can draw on it later.
     // In the constructor create the reference using React.createRef() and add the ref
