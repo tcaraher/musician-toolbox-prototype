@@ -54,6 +54,7 @@ class App extends Component {
                         </button>
                     </div>
                     {this.state.audio ? <AudioAnalyser audio={this.state.audio} /> : ''}
+                    {/*Here we're including the analyser only if the state contains the audio stream*/}
                 </div>
             </div>
         );

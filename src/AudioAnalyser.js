@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import AudioVisualiser from "./AudioVisualiser";
 
 //When the component mounts we're going to setup the Web Audio API objects.
 // First we create a new AudioContext (Safari still only supports the webkit prefixed version of this, sadly).
@@ -59,7 +60,10 @@ class AudioAnalyser extends Component {
     // To look at the data we're producing, we obv need a render function...
 
     render() {
-        return <textarea value={this.state.audioData} />;
+       // return <textarea value={this.state.audioData} />;
+        // Above was just a test to see values on screen...
+        // Below we define a render method that renders the <AudioVisualiser> and passes the audioData from the state as a property.
+        return <AudioVisualiser audioData={this.state.audioData} />;
     }
 }
 
